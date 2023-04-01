@@ -1,7 +1,7 @@
 ---
 // Component import
 import MainHead from './MainHead.astro'
-import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro'
 
 // Style import
 import '../styles/style.css'
@@ -13,10 +13,10 @@ const {
 } = Astro.props
 ---
 
-<html lang='en'>
+<html lang='en' class='min-h-screen'>
   <MainHead title={title} description={description} />
-  <body>
-    <Nav />
+  <body class='min-h-screen'>
+    <Header />
     <slot>Default Text</slot>
     <Footer />
   </body>
